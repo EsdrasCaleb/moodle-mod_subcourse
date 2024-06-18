@@ -58,7 +58,7 @@ if ($fetchnow && $refcourse) {
     $event = \mod_subcourse\event\subcourse_grades_fetched::create([
         'objectid' => $subcourse->id,
         'context' => $context,
-        'other' => ['refcourse' => $refcourse->id]
+        'other' => ['refcourse' => $refcourse->id],
     ]);
 
     $event->add_record_snapshot('course_modules', $cm);

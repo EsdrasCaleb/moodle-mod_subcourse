@@ -94,7 +94,7 @@ class check_completed_refcourses extends \core\task\scheduled_task {
                     $course->id => (object)[
                         'course' => $course,
                         'participants' => get_enrolled_users($coursecontext, 'mod/subcourse:begraded', 0, "u.id"),
-                    ]
+                    ],
                 ];
             }
 
