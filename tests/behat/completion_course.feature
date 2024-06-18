@@ -55,7 +55,6 @@ Feature: Completing the referenced course can lead to completing the subcourse a
     # Running completion task just after clicking sometimes fail, as record should be created before the task runs.
     And I wait "1" seconds
     When I run the scheduled task "core\task\completion_regular_task"
-    And I wait "1" seconds
     And I am on "MainCourse" course homepage
     Then the "Complete the activity" completion condition of "Unit course 1" is displayed as "done"
     And I log out
